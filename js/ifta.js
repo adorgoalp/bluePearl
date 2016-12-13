@@ -35,27 +35,34 @@ function resizeBanner() {
     $('.banner').css({'height': vph + 'px'});
     $('.banner').css({'width': vpw + 'px'});
 }
-var initialTitleHeight = 0;
-var initialTitleWidth = 0;
-var initialVPHeight = 0;
-var initialVPWidth = 0;
-function saveInitialTitleSize(){
-    initialTitleHeight = $('#title').height();
-    initialTitleWidth = $('#title').width();
-    initialVPHeight = $(window).height();
-    initialVPWidth = $(window).width();
+function resizeDivById(divId) {
+    vpw = $(window).width();
+    vph = $(window).height() - 10;
+    $('#' + divId).css({'height': vph + 'px'});
+    $('#' + divId).css({'width': vpw + 'px'});
 }
-function resizeTitle() {
-    
+function goToByScroll(id) {
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top},
+    'slow');
 }
+
 $(document).ready(function () {
-    resizeBanner();
-    saveInitialTitleSize();
+    resizeDivById('bannerDiv');
 });
+
 window.onresize = function (event) {
     resizeBanner();
     resizeTitle();
 };
+$('.skillbar').each(function () {
+    jQuery(this).find('.skillbar-bar').animate({
+        width: $(this).attr('data-percent')
+    }, 8000);
+});
 $(document).on('ready', function () {
     $(".single-item").slick({
         autoplay: true,
