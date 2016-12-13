@@ -29,6 +29,33 @@ function PopupCenter(url, title, w, h) {
         newWindow.focus();
     }
 }
+function resizeBanner() {
+    vpw = $(window).width();
+    vph = $(window).height() - 10;
+    $('.banner').css({'height': vph + 'px'});
+    $('.banner').css({'width': vpw + 'px'});
+}
+var initialTitleHeight = 0;
+var initialTitleWidth = 0;
+var initialVPHeight = 0;
+var initialVPWidth = 0;
+function saveInitialTitleSize(){
+    initialTitleHeight = $('#title').height();
+    initialTitleWidth = $('#title').width();
+    initialVPHeight = $(window).height();
+    initialVPWidth = $(window).width();
+}
+function resizeTitle() {
+    
+}
+$(document).ready(function () {
+    resizeBanner();
+    saveInitialTitleSize();
+});
+window.onresize = function (event) {
+    resizeBanner();
+    resizeTitle();
+};
 $(document).on('ready', function () {
     $(".single-item").slick({
         autoplay: true,

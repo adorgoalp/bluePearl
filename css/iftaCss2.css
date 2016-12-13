@@ -2,6 +2,9 @@
     Created on : Nov 25, 2016, 8:59:05 PM
     Author     : ifta
 */
+
+
+
 body{
     width:100%;
     height:100%;
@@ -37,10 +40,17 @@ p{
     background:  brown;
 }
 .banner{
+    position:relative;
     height: auto;
-    background: #fefda5;
-    padding: 5px;
-    text-align: center;
+    width: 100%;
+    background: black;
+}
+#title{
+    position: absolute; margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .slider {
     width: 50%;
