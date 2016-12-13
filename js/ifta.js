@@ -31,10 +31,8 @@ function PopupCenter(url, title, w, h) {
 }
 $(document).on('ready', function () {
     $(".single-item").slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1
+        autoplay: true,
+        autoplaySpeed: 1500
     });
     $(".center").slick({
         dots: true,
@@ -53,125 +51,125 @@ $(document).on('ready', function () {
         $(".logo").eq(0).trigger("click");
         return false;
     });
-    $(".logo").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".logo").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //banners
     $(".bannerLauncer").on("click", function () {
         $(".banners").eq(0).trigger("click");
         return false;
     });
-    $(".banners").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".banners").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //cards
-     $(".businessCardLauncher").on("click", function () {
+    $(".businessCardLauncher").on("click", function () {
         $(".bussinessCard").eq(0).trigger("click");
         return false;
     });
-    $(".bussinessCard").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".bussinessCard").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //calender
-     $(".calenderLauncher").on("click", function () {
+    $(".calenderLauncher").on("click", function () {
         $(".calender").eq(0).trigger("click");
         return false;
     });
-    $(".calender").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".calender").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //brochure
-     $(".brochureLauncher").on("click", function () {
+    $(".brochureLauncher").on("click", function () {
         $(".brochure").eq(0).trigger("click");
         return false;
     });
-    $(".brochure").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".brochure").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //cover
-     $(".coverLauncher").on("click", function () {
+    $(".coverLauncher").on("click", function () {
         $(".cover").eq(0).trigger("click");
         return false;
     });
-    $(".cover").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".cover").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //bannerWithAds
-     $(".bannerWithAdsLauncher").on("click", function () {
+    $(".bannerWithAdsLauncher").on("click", function () {
         $(".bannerWithAds").eq(0).trigger("click");
         return false;
     });
-    $(".bannerWithAds").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
-    
+    $(".bannerWithAds").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
+
     //desigh and effect
-     $(".designEffectLauncher").on("click", function () {
+    $(".designEffectLauncher").on("click", function () {
         $(".designEffect").eq(0).trigger("click");
         return false;
     });
-    $(".designEffect").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".designEffect").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //retouch
-     $(".retouchLauncher").on("click", function () {
+    $(".retouchLauncher").on("click", function () {
         $(".retouch").eq(0).trigger("click");
         return false;
     });
-    $(".retouch").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".retouch").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //fbAds
-     $(".fbAdsLauncher").on("click", function () {
+    $(".fbAdsLauncher").on("click", function () {
         $(".fbAds").eq(0).trigger("click");
         return false;
     });
-    $(".fbAds").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".fbAds").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //ads
-     $(".adsLauncher").on("click", function () {
+    $(".adsLauncher").on("click", function () {
         $(".ads").eq(0).trigger("click");
         return false;
     });
-    $(".ads").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
-     //icon
-     $(".iconLauncher").on("click", function () {
+    $(".ads").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
+    //icon
+    $(".iconLauncher").on("click", function () {
         $(".icon").eq(0).trigger("click");
         return false;
     });
-    $(".icon").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".icon").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //invCard
-     $(".invCardLauncher").on("click", function () {
+    $(".invCardLauncher").on("click", function () {
         $(".invCard").eq(0).trigger("click");
         return false;
     });
-    $(".invCard").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".invCard").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //mobileAd
-     $(".mobileAdLauncher").on("click", function () {
+    $(".mobileAdLauncher").on("click", function () {
         $(".mobileAd").eq(0).trigger("click");
         return false;
     });
-    $(".mobileAd").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
-     //printBanner
-     $(".printBannerLauncher").on("click", function () {
+    $(".mobileAd").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
+    //printBanner
+    $(".printBannerLauncher").on("click", function () {
         $(".printBanner").eq(0).trigger("click");
         return false;
     });
-    $(".printBanner").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".printBanner").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //social media Banner
-     $(".smBannerLauncher").on("click", function () {
+    $(".smBannerLauncher").on("click", function () {
         $(".smBanner").eq(0).trigger("click");
         return false;
     });
-    $(".smBanner").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".smBanner").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //textEffect
-     $(".textEffectLauncher").on("click", function () {
+    $(".textEffectLauncher").on("click", function () {
         $(".textEffect").eq(0).trigger("click");
         return false;
     });
-    $(".textEffect").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
-    
+    $(".textEffect").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
+
     //web Template
-     $(".webTemplateLauncher").on("click", function () {
+    $(".webTemplateLauncher").on("click", function () {
         $(".webTemplate").eq(0).trigger("click");
         return false;
     });
-    $(".webTemplate").attr('rel', 'gallery').fancybox({padding: 0,title:'Scroll mouse to change'});
+    $(".webTemplate").attr('rel', 'gallery').fancybox({padding: 0, title: 'Scroll mouse to change'});
 });

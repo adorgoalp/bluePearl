@@ -7,9 +7,11 @@ body{
     height:100%;
     margin:0;
     padding:0;
-    font-family: 'Lato', sans-serif;
-    font-size:18px;
+    font-family: sans-serif;
+    font-size:14px;
     text-shadow: 0 0 1px rgba(51,51,51,0.2);
+    background:  #f6f6f6;
+    
 }
 div{
     margin: 0;
@@ -19,11 +21,11 @@ p{
 }
 
 .topbox{
-    height: 10px;
+    height: 5px;
     width: 100%;
 }
 .grey{
-    color: #999999;
+    color: #E70707;
 }
 .black{
     background : #000000;
@@ -31,10 +33,14 @@ p{
 .red{
     background: #ff0000;
 }
+.deepred{
+    background:  brown;
+}
 .banner{
     height: auto;
-    background: #3dd0ac;
+    background: #fefda5;
     padding: 5px;
+    text-align: center;
 }
 .slider {
     width: 50%;
@@ -50,6 +56,7 @@ p{
 .slick-prev:before,
 .slick-next:before {
     color: black;
+    content: "";
 }
 .scrollDown {
     display:flex;
@@ -69,8 +76,8 @@ p{
     text-align: center;
 }
 .title-and-name h1{
-    font-size: 400%;
-    margin-bottom: 0;
+    font-size: 300%;
+    margin: 15px;
 }
 .title-and-name h2{
     font-size: 200%;
@@ -154,6 +161,7 @@ p{
     max-width:140px;
     height:100%;
     margin: 0;
+    left: -70px;
 }
 .skillZoom{
     -webkit-transition: all .3s ease-out; 
@@ -240,4 +248,17 @@ img.skillZoom, img.skillBase{
 .portfolioTable tr td a img{
     height: 100px;
     width: 100px;
+}
+
+#row {
+    white-space: nowrap;
+    text-align: center;
+}
+#row > div {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+#row > div + div {
+    margin-left: 20px
 }
